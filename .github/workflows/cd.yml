@@ -27,7 +27,7 @@ jobs:
           port: 22
           script: |
             sudo su
-            cd /root/cdci
+            cd /home/ga-cd/cdci/
             git pull origin main
             git status
             npm install --only=prod
