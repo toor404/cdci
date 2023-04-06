@@ -24,10 +24,10 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATE_KEY }}
-          port: 22
+          port: 2222
           script: |
             sudo su
-            cd /home/ga-cd/cdci/
+            cd /root/cdci
             git pull origin main
             git status
             npm install --only=prod
